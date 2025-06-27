@@ -5,7 +5,7 @@ public class HeartPrinter {
         System.out.println("  *       *   *       *  ");
         System.out.println(" *         * *         * ");
         System.out.println("*                       *");
-        System.out.println("*    I love you 999!    *");
+        System.out.println("*Thần Chủ phù hộ chúng ta*");
         System.out.println("*                       *");
         System.out.println(" *                     * ");
         System.out.println("  *                   *  ");
