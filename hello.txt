@@ -1,0 +1,93 @@
+// =========== Python ===========
+// Đổi tên file thành hello.py và chạy: python hello.py
+print("Hello, World!")
+
+
+/* =========== Java ===========
+   Đổi tên file thành HelloWorld.java và chạy:
+     javac HelloWorld.java
+     java HelloWorld
+*/
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+/* =========== JavaScript ===========
+   Đổi tên file thành hello.js và chạy: node hello.js
+*/
+console.log("Hello, World!");
+
+
+/* =========== C++ ===========
+   Đổi tên file thành hello.cpp và chạy:
+     g++ hello.cpp -o hello
+     ./hello
+*/
+#include <iostream>
+int main() {
+    std::cout << "Hello, World!";
+    return 0;
+}
+
+
+/* =========== C# ===========
+   Đổi tên file thành Hello.cs và chạy:
+     mcs Hello.cs
+     mono Hello.exe
+*/
+using System;
+class Hello {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+
+/* =========== TypeScript ===========
+   Đổi tên file thành hello.ts và chạy:
+     tsc hello.ts
+     node hello.js
+*/
+console.log("Hello, World!");
+
+
+/* =========== SQL ===========
+   Đổi tên file thành hello.sql và chạy với SQLite3:
+     sqlite3 :memory: < hello.sql
+*/
+SELECT 'Hello, World!';
+
+
+/* =========== C ===========
+   Đổi tên file thành hello.c và chạy:
+     gcc hello.c -o hello
+     ./hello
+*/
+#include <stdio.h>
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+
+
+/* =========== Go ===========
+   Đổi tên file thành hello.go và chạy:
+     go run hello.go
+*/
+package main
+import "fmt"
+func main() {
+    fmt.Println("Hello, World!")
+}
+
+
+/* =========== PHP ===========
+   Đổi tên file thành hello.php và chạy:
+     php hello.php
+*/
+<?php
+echo "Hello, World!";
+?>
