@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheatsheet (Từ ghi chú của bạn)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>HTML Cheatsheet</h1>
+    <p>Cheatsheet tổng hợp từ ghi chú của bạn — mô tả tiếng Việt, tag/thuộc tính tiếng Anh.</p>
+    <nav class="toc">
+      <details>
+        <summary>Mục lục nhanh theo tag</summary>
+        <div class="toc-grid"><a href="#tag-html">&lt;html&gt;</a>
+<a href="#tag-head">&lt;head&gt;</a>
+<a href="#tag-meta">&lt;meta&gt;</a>
+<a href="#tag-title">&lt;title&gt;</a>
+<a href="#tag-base">&lt;base&gt;</a>
+<a href="#tag-link">&lt;link&gt;</a>
+<a href="#tag-style">&lt;style&gt;</a>
+<a href="#tag-script">&lt;script&gt;</a>
+<a href="#tag-body">&lt;body&gt;</a>
+<a href="#tag-h1">&lt;h1&gt;</a>
+<a href="#tag-h2">&lt;h2&gt;</a>
+<a href="#tag-h3">&lt;h3&gt;</a>
+<a href="#tag-h4">&lt;h4&gt;</a>
+<a href="#tag-h5">&lt;h5&gt;</a>
+<a href="#tag-h6">&lt;h6&gt;</a>
+<a href="#tag-p">&lt;p&gt;</a>
+<a href="#tag-br">&lt;br&gt;</a>
+<a href="#tag-hr">&lt;hr&gt;</a>
+<a href="#tag-pre">&lt;pre&gt;</a>
+<a href="#tag-b">&lt;b&gt;</a>
+<a href="#tag-strong">&lt;strong&gt;</a>
+<a href="#tag-i">&lt;i&gt;</a>
+<a href="#tag-em">&lt;em&gt;</a>
+<a href="#tag-u">&lt;u&gt;</a>
+<a href="#tag-mark">&lt;mark&gt;</a>
+<a href="#tag-small">&lt;small&gt;</a>
+<a href="#tag-del">&lt;del&gt;</a>
+<a href="#tag-ins">&lt;ins&gt;</a>
+<a href="#tag-sub">&lt;sub&gt;</a>
+<a href="#tag-sup">&lt;sup&gt;</a>
+<a href="#tag-blockquote">&lt;blockquote&gt;</a>
+<a href="#tag-q">&lt;q&gt;</a>
+<a href="#tag-abbr">&lt;abbr&gt;</a>
+<a href="#tag-address">&lt;address&gt;</a>
+<a href="#tag-cite">&lt;cite&gt;</a>
+<a href="#tag-bdo">&lt;bdo&gt;</a>
+<a href="#tag-code">&lt;code&gt;</a>
+<a href="#tag-kbd">&lt;kbd&gt;</a>
+<a href="#tag-samp">&lt;samp&gt;</a>
+<a href="#tag-var">&lt;var&gt;</a>
+<a href="#tag-span">&lt;span&gt;</a>
+<a href="#tag-div">&lt;div&gt;</a>
+<a href="#tag-a">&lt;a&gt;</a>
+<a href="#tag-img">&lt;img&gt;</a>
+<a href="#tag-ul">&lt;ul&gt;</a>
+<a href="#tag-ol">&lt;ol&gt;</a>
+<a href="#tag-li">&lt;li&gt;</a>
+<a href="#tag-dl">&lt;dl&gt;</a>
+<a href="#tag-dt">&lt;dt&gt;</a>
+<a href="#tag-dd">&lt;dd&gt;</a>
+<a href="#tag-table">&lt;table&gt;</a>
+<a href="#tag-caption">&lt;caption&gt;</a>
+<a href="#tag-thead">&lt;thead&gt;</a>
+<a href="#tag-tbody">&lt;tbody&gt;</a>
+<a href="#tag-tfoot">&lt;tfoot&gt;</a>
+<a href="#tag-tr">&lt;tr&gt;</a>
+<a href="#tag-th">&lt;th&gt;</a>
+<a href="#tag-td">&lt;td&gt;</a>
+<a href="#tag-form">&lt;form&gt;</a>
+<a href="#tag-label">&lt;label&gt;</a>
+<a href="#tag-input">&lt;input&gt;</a>
+<a href="#tag-textarea">&lt;textarea&gt;</a>
+<a href="#tag-select">&lt;select&gt;</a>
+<a href="#tag-option">&lt;option&gt;</a>
+<a href="#tag-button">&lt;button&gt;</a>
+<a href="#tag-fieldset">&lt;fieldset&gt;</a>
+<a href="#tag-legend">&lt;legend&gt;</a>
+<a href="#tag-datalist">&lt;datalist&gt;</a>
+<a href="#tag-output">&lt;output&gt;</a>
+<a href="#tag-progress">&lt;progress&gt;</a>
+<a href="#tag-meter">&lt;meter&gt;</a>
+<a href="#tag-figure">&lt;figure&gt;</a>
+<a href="#tag-figcaption">&lt;figcaption&gt;</a>
+<a href="#tag-audio">&lt;audio&gt;</a>
+<a href="#tag-video">&lt;video&gt;</a>
+<a href="#tag-source">&lt;source&gt;</a>
+<a href="#tag-nav">&lt;nav&gt;</a>
+<a href="#tag-header">&lt;header&gt;</a>
+<a href="#tag-footer">&lt;footer&gt;</a>
+<a href="#tag-main">&lt;main&gt;</a>
+<a href="#tag-section">&lt;section&gt;</a>
+<a href="#tag-article">&lt;article&gt;</a>
+<a href="#tag-aside">&lt;aside&gt;</a>
+<a href="#tag-details">&lt;details&gt;</a>
+<a href="#tag-summary">&lt;summary&gt;</a>
+<a href="#tag-time">&lt;time&gt;</a>
+<a href="#tag-iframe">&lt;iframe&gt;</a>
+<a href="#tag-wbr">&lt;wbr&gt;</a>
+<a href="#tag-area">&lt;area&gt;</a>
+<a href="#tag-map">&lt;map&gt;</a></div>
+      </details>
+    </nav>
+  </header>
+
+  <section><h2>Cấu trúc tài liệu</h2>
+    <div class="cheat-item" id="tag-html">
+        <div class="desc"><div class="tagname">&lt;html&gt;</div><div class="text">Thẻ gốc của tài liệu HTML, bao bọc toàn bộ nội dung.</div></div>
+        <div class="code"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;vi&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Tiêu đề&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Nội dung trang
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-head">
+        <div class="desc"><div class="tagname">&lt;head&gt;</div><div class="text">Phần đầu tài liệu: chứa metadata, tiêu đề, liên kết CSS/JS.</div></div>
+        <div class="code"><pre><code>&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Tiêu đề&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-meta">
+        <div class="desc"><div class="tagname">&lt;meta&gt;</div><div class="text">Metadata cho tài liệu (charset, viewport, SEO).</div></div>
+        <div class="code"><pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-title">
+        <div class="desc"><div class="tagname">&lt;title&gt;</div><div class="text">Tiêu đề trang (hiện trên tab trình duyệt, SEO).</div></div>
+        <div class="code"><pre><code>&lt;title&gt;Trang web của tôi&lt;/title&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-base">
+        <div class="desc"><div class="tagname">&lt;base&gt;</div><div class="text">Đặt URL gốc cho tất cả liên kết tương đối.</div></div>
+        <div class="code"><pre><code>&lt;base href=&quot;https://example.com/&quot;&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-link">
+        <div class="desc"><div class="tagname">&lt;link&gt;</div><div class="text">Liên kết tài nguyên ngoài (CSS, icon...).</div></div>
+        <div class="code"><pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-style">
+        <div class="desc"><div class="tagname">&lt;style&gt;</div><div class="text">Chèn CSS nội bộ trong tài liệu.</div></div>
+        <div class="code"><pre><code>&lt;style&gt;
+  p { color: blue; }
+&lt;/style&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-script">
+        <div class="desc"><div class="tagname">&lt;script&gt;</div><div class="text">Chèn JavaScript (không hiển thị trực tiếp).</div></div>
+        <div class="code"><pre><code>&lt;script&gt;
+  console.log(&#x27;Xin chào từ JS&#x27;);
+&lt;/script&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-body">
+        <div class="desc"><div class="tagname">&lt;body&gt;</div><div class="text">Phần nội dung hiển thị cho người dùng.</div></div>
+        <div class="code"><pre><code>&lt;body&gt;
+  &lt;h1&gt;Xin chào!&lt;/h1&gt;
+&lt;/body&gt;</code></pre></div>
+        <div class="result"><em>(Không hiển thị trực tiếp — xem mô tả)</em></div>
+    </div>
+    </section><section><h2>Tiêu đề & Văn bản</h2>
+    <div class="cheat-item" id="tag-h1">
+        <div class="desc"><div class="tagname">&lt;h1&gt;</div><div class="text">Tiêu đề cấp 1 (lớn nhất) trong 6 cấp h1–h6.</div></div>
+        <div class="code"><pre><code>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Tiêu đề chính&lt;/h1&gt;</code></pre></div>
+        <div class="result"><h1 style="font-size:60px;">Tiêu đề chính</h1></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-h2">
+        <div class="desc"><div class="tagname">&lt;h2&gt;</div><div class="text">Tiêu đề cấp 2.</div></div>
+        <div class="code"><pre><code>&lt;h2&gt;Tiêu đề phụ&lt;/h2&gt;</code></pre></div>
+        <div class="result"><h2>Tiêu đề phụ</h2></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-h3">
+        <div class="desc"><div class="tagname">&lt;h3&gt;</div><div class="text">Tiêu đề cấp 3.</div></div>
+        <div class="code"><pre><code>&lt;h3&gt;Tiêu đề nhỏ&lt;/h3&gt;</code></pre></div>
+        <div class="result"><h3>Tiêu đề nhỏ</h3></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-h4">
+        <div class="desc"><div class="tagname">&lt;h4&gt;</div><div class="text">Tiêu đề cấp 4.</div></div>
+        <div class="code"><pre><code>&lt;h4&gt;Chi tiết&lt;/h4&gt;</code></pre></div>
+        <div class="result"><h4>Chi tiết</h4></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-h5">
+        <div class="desc"><div class="tagname">&lt;h5&gt;</div><div class="text">Tiêu đề cấp 5.</div></div>
+        <div class="code"><pre><code>&lt;h5&gt;Chú thích&lt;/h5&gt;</code></pre></div>
+        <div class="result"><h5>Chú thích</h5></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-h6">
+        <div class="desc"><div class="tagname">&lt;h6&gt;</div><div class="text">Tiêu đề cấp 6 (nhỏ nhất).</div></div>
+        <div class="code"><pre><code>&lt;h6&gt;Ghi chú nhỏ&lt;/h6&gt;</code></pre></div>
+        <div class="result"><h6>Ghi chú nhỏ</h6></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-p">
+        <div class="desc"><div class="tagname">&lt;p&gt;</div><div class="text">Đoạn văn bản.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Đây là một đoạn văn tiếng Việt minh họa.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Đây là một đoạn văn tiếng Việt minh họa.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-br">
+        <div class="desc"><div class="tagname">&lt;br&gt;</div><div class="text">Ngắt dòng trong cùng đoạn văn (void element).</div></div>
+        <div class="code"><pre><code>Dòng 1&lt;br&gt;Dòng 2</code></pre></div>
+        <div class="result">Dòng 1<br>Dòng 2</div>
+    </div>
+    
+    <div class="cheat-item" id="tag-hr">
+        <div class="desc"><div class="tagname">&lt;hr&gt;</div><div class="text">Đường kẻ ngang phân cách nội dung (void element).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Trên&lt;/p&gt;&lt;hr&gt;&lt;p&gt;Dưới&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Trên</p><hr><p>Dưới</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-pre">
+        <div class="desc"><div class="tagname">&lt;pre&gt;</div><div class="text">Giữ nguyên định dạng khoảng trắng, xuống dòng.</div></div>
+        <div class="code"><pre><code>&lt;pre&gt;
+Dòng 1      có   nhiều khoảng trắng
+    Dòng 2 thụt vào
+&lt;/pre&gt;</code></pre></div>
+        <div class="result"><pre>
+Dòng 1      có   nhiều khoảng trắng
+    Dòng 2 thụt vào
+</pre></div>
+    </div>
+    </section><section><h2>Định dạng chữ</h2>
+    <div class="cheat-item" id="tag-b">
+        <div class="desc"><div class="tagname">&lt;b&gt;</div><div class="text">In đậm (không mang ngữ nghĩa nhấn mạnh).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Đây là &lt;b&gt;chữ đậm&lt;/b&gt;.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Đây là <b>chữ đậm</b>.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-strong">
+        <div class="desc"><div class="tagname">&lt;strong&gt;</div><div class="text">In đậm có ngữ nghĩa nhấn mạnh/quan trọng.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Hãy &lt;strong&gt;cẩn thận&lt;/strong&gt; nhé!&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Hãy <strong>cẩn thận</strong> nhé!</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-i">
+        <div class="desc"><div class="tagname">&lt;i&gt;</div><div class="text">In nghiêng (không mang ngữ nghĩa nhấn mạnh).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Từ &lt;i&gt;AI&lt;/i&gt; là viết tắt.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Từ <i>AI</i> là viết tắt.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-em">
+        <div class="desc"><div class="tagname">&lt;em&gt;</div><div class="text">Nhấn mạnh bằng in nghiêng (có ngữ nghĩa).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Tôi &lt;em&gt;rất&lt;/em&gt; thích HTML.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Tôi <em>rất</em> thích HTML.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-u">
+        <div class="desc"><div class="tagname">&lt;u&gt;</div><div class="text">Gạch dưới (không có ngữ nghĩa).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;u&gt;Gạch dưới&lt;/u&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><u>Gạch dưới</u></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-mark">
+        <div class="desc"><div class="tagname">&lt;mark&gt;</div><div class="text">Đánh dấu văn bản.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;mark&gt;Quan trọng&lt;/mark&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><mark>Quan trọng</mark></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-small">
+        <div class="desc"><div class="tagname">&lt;small&gt;</div><div class="text">Cỡ chữ nhỏ hơn bình thường.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;small&gt;Chú thích nhỏ&lt;/small&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><small>Chú thích nhỏ</small></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-del">
+        <div class="desc"><div class="tagname">&lt;del&gt;</div><div class="text">Văn bản bị xóa (gạch ngang).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Giá cũ: &lt;del&gt;500.000đ&lt;/del&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Giá cũ: <del>500.000đ</del></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-ins">
+        <div class="desc"><div class="tagname">&lt;ins&gt;</div><div class="text">Văn bản được chèn mới (gạch dưới).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Giá mới: &lt;ins&gt;450.000đ&lt;/ins&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Giá mới: <ins>450.000đ</ins></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-sub">
+        <div class="desc"><div class="tagname">&lt;sub&gt;</div><div class="text">Chỉ số dưới.</div></div>
+        <div class="code"><pre><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></pre></div>
+        <div class="result">H<sub>2</sub>O</div>
+    </div>
+    
+    <div class="cheat-item" id="tag-sup">
+        <div class="desc"><div class="tagname">&lt;sup&gt;</div><div class="text">Chỉ số trên.</div></div>
+        <div class="code"><pre><code>2&lt;sup&gt;3&lt;/sup&gt; = 8</code></pre></div>
+        <div class="result">2<sup>3</sup> = 8</div>
+    </div>
+    
+    <div class="cheat-item" id="tag-code">
+        <div class="desc"><div class="tagname">&lt;code&gt;</div><div class="text">Đoạn mã nguồn (font monospace).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Ví dụ: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; là khối.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Ví dụ: <code>&lt;div&gt;</code> là khối.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-kbd">
+        <div class="desc"><div class="tagname">&lt;kbd&gt;</div><div class="text">Tổ hợp phím người dùng gõ.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Nhấn &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; để lưu.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Nhấn <kbd>Ctrl</kbd> + <kbd>S</kbd> để lưu.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-samp">
+        <div class="desc"><div class="tagname">&lt;samp&gt;</div><div class="text">Kết quả mẫu từ chương trình.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Kết quả: &lt;samp&gt;OK&lt;/samp&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Kết quả: <samp>OK</samp></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-var">
+        <div class="desc"><div class="tagname">&lt;var&gt;</div><div class="text">Tên biến trong công thức/mã.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;var&gt;x&lt;/var&gt; + &lt;var&gt;y&lt;/var&gt; = 10&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><var>x</var> + <var>y</var> = 10</p></div>
+    </div>
+    </section><section><h2>Trích dẫn & Nghĩa ngữ</h2>
+    <div class="cheat-item" id="tag-blockquote">
+        <div class="desc"><div class="tagname">&lt;blockquote&gt;</div><div class="text">Trích dẫn dài ở dạng khối (thụt lề).</div></div>
+        <div class="code"><pre><code>&lt;blockquote cite=&quot;https://vi.wikipedia.org/wiki/HTML&quot;&gt;
+HTML là ngôn ngữ đánh dấu tiêu chuẩn...
+&lt;/blockquote&gt;</code></pre></div>
+        <div class="result"><blockquote cite="https://vi.wikipedia.org/wiki/HTML">
+HTML là ngôn ngữ đánh dấu tiêu chuẩn...
+</blockquote></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-q">
+        <div class="desc"><div class="tagname">&lt;q&gt;</div><div class="text">Trích dẫn ngắn trong dòng, tự thêm dấu ngoặc kép.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Anh ấy nói: &lt;q&gt;Tuyệt quá!&lt;/q&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Anh ấy nói: <q>Tuyệt quá!</q></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-abbr">
+        <div class="desc"><div class="tagname">&lt;abbr&gt;</div><div class="text">Từ viết tắt, giải thích khi rê chuột.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; rất phổ biến.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><abbr title="HyperText Markup Language">HTML</abbr> rất phổ biến.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-address">
+        <div class="desc"><div class="tagname">&lt;address&gt;</div><div class="text">Thông tin liên hệ/tác giả của tài liệu.</div></div>
+        <div class="code"><pre><code>&lt;address&gt;
+Viết bởi &lt;a href=&quot;mailto:me@example.com&quot;&gt;Me&lt;/a&gt;&lt;br&gt;
+TP. Hồ Chí Minh, Việt Nam
+&lt;/address&gt;</code></pre></div>
+        <div class="result"><address>
+Viết bởi <a href="mailto:me@example.com">Me</a><br>
+TP. Hồ Chí Minh, Việt Nam
+</address></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-cite">
+        <div class="desc"><div class="tagname">&lt;cite&gt;</div><div class="text">Tên tác phẩm (sách, phim...), thường hiển thị nghiêng.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;cite&gt;Dế Mèn Phiêu Lưu Ký&lt;/cite&gt; là tác phẩm nổi tiếng.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><cite>Dế Mèn Phiêu Lưu Ký</cite> là tác phẩm nổi tiếng.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-bdo">
+        <div class="desc"><div class="tagname">&lt;bdo&gt;</div><div class="text">Ép hướng văn bản trái→phải hoặc phải→trái.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;&lt;bdo dir=&quot;rtl&quot;&gt;Xin chào&lt;/bdo&gt;&lt;/p&gt;</code></pre></div>
+        <div class="result"><p><bdo dir="rtl">Xin chào</bdo></p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-time">
+        <div class="desc"><div class="tagname">&lt;time&gt;</div><div class="text">Biểu diễn thời gian/cột mốc.</div></div>
+        <div class="code"><pre><code>&lt;time datetime=&quot;2025-08-14&quot;&gt;14/08/2025&lt;/time&gt;</code></pre></div>
+        <div class="result"><time datetime="2025-08-14">14/08/2025</time></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-wbr">
+        <div class="desc"><div class="tagname">&lt;wbr&gt;</div><div class="text">Gợi ý vị trí có thể ngắt dòng trong từ dài.</div></div>
+        <div class="code"><pre><code>&lt;p&gt;siêu&lt;wbr&gt;dài&lt;wbr&gt;từ&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>siêu<wbr>dài<wbr>từ</p></div>
+    </div>
+    </section><section><h2>Liên kết & Hình ảnh</h2>
+    <div class="cheat-item" id="tag-a">
+        <div class="desc"><div class="tagname">&lt;a&gt;</div><div class="text">Liên kết đến URL khác hoặc tới id trong trang.</div></div>
+        <div class="code"><pre><code>&lt;a href=&quot;#lienhe&quot;&gt;Tới phần Liên hệ&lt;/a&gt;</code></pre></div>
+        <div class="result"><a href="#lienhe">Tới phần Liên hệ</a></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-img">
+        <div class="desc"><div class="tagname">&lt;img&gt;</div><div class="text">Chèn hình ảnh (void). Dùng src, alt, width, height.</div></div>
+        <div class="code"><pre><code>&lt;img src=&quot;https://via.placeholder.com/120&quot; alt=&quot;Ảnh minh họa&quot; width=&quot;120&quot; height=&quot;80&quot;&gt;</code></pre></div>
+        <div class="result"><img src="https://via.placeholder.com/120" alt="Ảnh minh họa" width="120" height="80"></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-figure">
+        <div class="desc"><div class="tagname">&lt;figure&gt;</div><div class="text">Nhóm nội dung minh họa (ảnh, biểu đồ...)</div></div>
+        <div class="code"><pre><code>&lt;figure&gt;
+  &lt;img src=&quot;https://via.placeholder.com/120&quot; alt=&quot;Ảnh&quot;&gt;
+  &lt;figcaption&gt;Chú thích ảnh&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></div>
+        <div class="result"><figure>
+  <img src="https://via.placeholder.com/120" alt="Ảnh">
+  <figcaption>Chú thích ảnh</figcaption>
+</figure></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-figcaption">
+        <div class="desc"><div class="tagname">&lt;figcaption&gt;</div><div class="text">Chú thích cho figure.</div></div>
+        <div class="code"><pre><code>&lt;figure&gt;
+  &lt;img src=&quot;https://via.placeholder.com/120&quot; alt=&quot;Ảnh&quot;&gt;
+  &lt;figcaption&gt;Chú thích ảnh&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></div>
+        <div class="result"><figure>
+  <img src="https://via.placeholder.com/120" alt="Ảnh">
+  <figcaption>Chú thích ảnh</figcaption>
+</figure></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-span">
+        <div class="desc"><div class="tagname">&lt;span&gt;</div><div class="text">Phần tử nội dòng để nhóm văn bản (không ngữ nghĩa).</div></div>
+        <div class="code"><pre><code>&lt;p&gt;Chữ &lt;span style=&quot;color:tomato&quot;&gt;được tô màu&lt;/span&gt;.&lt;/p&gt;</code></pre></div>
+        <div class="result"><p>Chữ <span style="color:tomato">được tô màu</span>.</p></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-div">
+        <div class="desc"><div class="tagname">&lt;div&gt;</div><div class="text">Phần tử khối để nhóm nội dung, thường dùng cho bố cục.</div></div>
+        <div class="code"><pre><code>&lt;div style=&quot;border:1px solid #ccc; padding:8px&quot;&gt;Một khối nội dung&lt;/div&gt;</code></pre></div>
+        <div class="result"><div style="border:1px solid #ccc; padding:8px">Một khối nội dung</div></div>
+    </div>
+    </section><section><h2>Danh sách</h2>
+    <div class="cheat-item" id="tag-ul">
+        <div class="desc"><div class="tagname">&lt;ul&gt;</div><div class="text">Danh sách không thứ tự (dấu chấm).</div></div>
+        <div class="code"><pre><code>&lt;ul&gt;
+  &lt;li&gt;Mục 1&lt;/li&gt;
+  &lt;li&gt;Mục 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div>
+        <div class="result"><ul>
+  <li>Mục 1</li>
+  <li>Mục 2</li>
+</ul></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-ol">
+        <div class="desc"><div class="tagname">&lt;ol&gt;</div><div class="text">Danh sách có thứ tự (số).</div></div>
+        <div class="code"><pre><code>&lt;ol&gt;
+  &lt;li&gt;Bước 1&lt;/li&gt;
+  &lt;li&gt;Bước 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre></div>
+        <div class="result"><ol>
+  <li>Bước 1</li>
+  <li>Bước 2</li>
+</ol></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-li">
+        <div class="desc"><div class="tagname">&lt;li&gt;</div><div class="text">Phần tử con của ul/ol.</div></div>
+        <div class="code"><pre><code>&lt;ul&gt;&lt;li&gt;Một mục&lt;/li&gt;&lt;/ul&gt;</code></pre></div>
+        <div class="result"><ul><li>Một mục</li></ul></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-dl">
+        <div class="desc"><div class="tagname">&lt;dl&gt;</div><div class="text">Danh sách mô tả (thuật ngữ - định nghĩa).</div></div>
+        <div class="code"><pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Ngôn ngữ đánh dấu siêu văn bản&lt;/dd&gt;
+&lt;/dl&gt;</code></pre></div>
+        <div class="result"><dl>
+  <dt>HTML</dt>
+  <dd>Ngôn ngữ đánh dấu siêu văn bản</dd>
+</dl></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-dt">
+        <div class="desc"><div class="tagname">&lt;dt&gt;</div><div class="text">Thuật ngữ trong danh sách mô tả.</div></div>
+        <div class="code"><pre><code>&lt;dl&gt;&lt;dt&gt;Từ khóa&lt;/dt&gt;&lt;dd&gt;Định nghĩa&lt;/dd&gt;&lt;/dl&gt;</code></pre></div>
+        <div class="result"><dl><dt>Từ khóa</dt><dd>Định nghĩa</dd></dl></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-dd">
+        <div class="desc"><div class="tagname">&lt;dd&gt;</div><div class="text">Định nghĩa cho thuật ngữ (trong dl).</div></div>
+        <div class="code"><pre><code>&lt;dl&gt;&lt;dt&gt;AI&lt;/dt&gt;&lt;dd&gt;Trí tuệ nhân tạo&lt;/dd&gt;&lt;/dl&gt;</code></pre></div>
+        <div class="result"><dl><dt>AI</dt><dd>Trí tuệ nhân tạo</dd></dl></div>
+    </div>
+    </section><section><h2>Bảng</h2>
+    <div class="cheat-item" id="tag-table">
+        <div class="desc"><div class="tagname">&lt;table&gt;</div><div class="text">Bảng dữ liệu.</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;tr&gt;&lt;th&gt;Tên&lt;/th&gt;&lt;th&gt;Tuổi&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;An&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1">
+  <tr><th>Tên</th><th>Tuổi</th></tr>
+  <tr><td>An</td><td>20</td></tr>
+</table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-caption">
+        <div class="desc"><div class="tagname">&lt;caption&gt;</div><div class="text">Tiêu đề của bảng.</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;caption&gt;Bảng điểm&lt;/caption&gt;
+  &lt;tr&gt;&lt;th&gt;Tên&lt;/th&gt;&lt;th&gt;Điểm&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;An&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1">
+  <caption>Bảng điểm</caption>
+  <tr><th>Tên</th><th>Điểm</th></tr>
+  <tr><td>An</td><td>9</td></tr>
+</table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-thead">
+        <div class="desc"><div class="tagname">&lt;thead&gt;</div><div class="text">Phần đầu bảng (nhóm hàng tiêu đề).</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Cột A&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Dữ liệu&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1">
+  <thead><tr><th>Cột A</th></tr></thead>
+  <tbody><tr><td>Dữ liệu</td></tr></tbody>
+</table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-tbody">
+        <div class="desc"><div class="tagname">&lt;tbody&gt;</div><div class="text">Phần thân bảng.</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Nội dung&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1">
+  <tbody><tr><td>Nội dung</td></tr></tbody>
+</table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-tfoot">
+        <div class="desc"><div class="tagname">&lt;tfoot&gt;</div><div class="text">Phần chân bảng (tổng, ghi chú).</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Tổng&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1">
+  <tfoot><tr><td>Tổng</td></tr></tfoot>
+</table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-tr">
+        <div class="desc"><div class="tagname">&lt;tr&gt;</div><div class="text">Hàng trong bảng.</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;&lt;tr&gt;&lt;td&gt;Ô&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1"><tr><td>Ô</td></tr></table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-th">
+        <div class="desc"><div class="tagname">&lt;th&gt;</div><div class="text">Ô tiêu đề cột/hàng (in đậm, canh giữa).</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;&lt;tr&gt;&lt;th&gt;Tiêu đề&lt;/th&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1"><tr><th>Tiêu đề</th></tr></table></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-td">
+        <div class="desc"><div class="tagname">&lt;td&gt;</div><div class="text">Ô dữ liệu trong bảng.</div></div>
+        <div class="code"><pre><code>&lt;table border=&quot;1&quot;&gt;&lt;tr&gt;&lt;td&gt;Dữ liệu&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre></div>
+        <div class="result"><table border="1"><tr><td>Dữ liệu</td></tr></table></div>
+    </div>
+    </section><section><h2>Biểu mẫu</h2>
+    <div class="cheat-item" id="tag-form">
+        <div class="desc"><div class="tagname">&lt;form&gt;</div><div class="text">Biểu mẫu nhập liệu.</div></div>
+        <div class="code"><pre><code>&lt;form&gt;
+  &lt;label&gt;Họ tên: &lt;input type=&quot;text&quot; name=&quot;hoten&quot;&gt;&lt;/label&gt;
+  &lt;button type=&quot;submit&quot;&gt;Gửi&lt;/button&gt;
+&lt;/form&gt;</code></pre></div>
+        <div class="result"><form>
+  <label>Họ tên: <input type="text" name="hoten"></label>
+  <button type="submit">Gửi</button>
+</form></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-label">
+        <div class="desc"><div class="tagname">&lt;label&gt;</div><div class="text">Nhãn mô tả cho điều khiển form.</div></div>
+        <div class="code"><pre><code>&lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt; &lt;input id=&quot;email&quot; type=&quot;email&quot;&gt;</code></pre></div>
+        <div class="result"><label for="email">Email</label> <input id="email" type="email"></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-input">
+        <div class="desc"><div class="tagname">&lt;input&gt;</div><div class="text">Ô nhập liệu (nhiều loại: text, email, number...).</div></div>
+        <div class="code"><pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;Nhập tên...&quot;&gt;</code></pre></div>
+        <div class="result"><input type="text" placeholder="Nhập tên..."></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-textarea">
+        <div class="desc"><div class="tagname">&lt;textarea&gt;</div><div class="text">Ô nhập nhiều dòng.</div></div>
+        <div class="code"><pre><code>&lt;textarea rows=&quot;3&quot; cols=&quot;30&quot;&gt;Nội dung nhiều dòng&lt;/textarea&gt;</code></pre></div>
+        <div class="result"><textarea rows="3" cols="30">Nội dung nhiều dòng</textarea></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-select">
+        <div class="desc"><div class="tagname">&lt;select&gt;</div><div class="text">Danh sách chọn.</div></div>
+        <div class="code"><pre><code>&lt;select&gt;
+  &lt;option&gt;Hà Nội&lt;/option&gt;
+  &lt;option&gt;Đà Nẵng&lt;/option&gt;
+&lt;/select&gt;</code></pre></div>
+        <div class="result"><select>
+  <option>Hà Nội</option>
+  <option>Đà Nẵng</option>
+</select></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-option">
+        <div class="desc"><div class="tagname">&lt;option&gt;</div><div class="text">Tùy chọn trong select.</div></div>
+        <div class="code"><pre><code>&lt;select&gt;&lt;option&gt;Chọn 1&lt;/option&gt;&lt;/select&gt;</code></pre></div>
+        <div class="result"><select><option>Chọn 1</option></select></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-button">
+        <div class="desc"><div class="tagname">&lt;button&gt;</div><div class="text">Nút bấm.</div></div>
+        <div class="code"><pre><code>&lt;button type=&quot;button&quot;&gt;Bấm tôi&lt;/button&gt;</code></pre></div>
+        <div class="result"><button type="button">Bấm tôi</button></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-fieldset">
+        <div class="desc"><div class="tagname">&lt;fieldset&gt;</div><div class="text">Nhóm điều khiển form.</div></div>
+        <div class="code"><pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Thông tin&lt;/legend&gt;
+  &lt;label&gt;Tên: &lt;input type=&quot;text&quot;&gt;&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre></div>
+        <div class="result"><fieldset>
+  <legend>Thông tin</legend>
+  <label>Tên: <input type="text"></label>
+</fieldset></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-legend">
+        <div class="desc"><div class="tagname">&lt;legend&gt;</div><div class="text">Tiêu đề cho fieldset.</div></div>
+        <div class="code"><pre><code>&lt;fieldset&gt;&lt;legend&gt;Liên hệ&lt;/legend&gt;&lt;/fieldset&gt;</code></pre></div>
+        <div class="result"><fieldset><legend>Liên hệ</legend></fieldset></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-datalist">
+        <div class="desc"><div class="tagname">&lt;datalist&gt;</div><div class="text">Danh sách gợi ý cho input.</div></div>
+        <div class="code"><pre><code>&lt;input list=&quot;browsers&quot;&gt;
+&lt;datalist id=&quot;browsers&quot;&gt;
+  &lt;option value=&quot;Chrome&quot;&gt;
+  &lt;option value=&quot;Firefox&quot;&gt;
+&lt;/datalist&gt;</code></pre></div>
+        <div class="result"><input list="browsers">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-output">
+        <div class="desc"><div class="tagname">&lt;output&gt;</div><div class="text">Hiển thị kết quả từ tính toán/form.</div></div>
+        <div class="code"><pre><code>&lt;output name=&quot;kq&quot;&gt;0&lt;/output&gt;</code></pre></div>
+        <div class="result"><output name="kq">0</output></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-progress">
+        <div class="desc"><div class="tagname">&lt;progress&gt;</div><div class="text">Thanh tiến trình.</div></div>
+        <div class="code"><pre><code>&lt;progress value=&quot;40&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;</code></pre></div>
+        <div class="result"><progress value="40" max="100"></progress></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-meter">
+        <div class="desc"><div class="tagname">&lt;meter&gt;</div><div class="text">Đo lường trong một khoảng (nhiệt độ, pin...).</div></div>
+        <div class="code"><pre><code>&lt;meter min=&quot;0&quot; max=&quot;100&quot; value=&quot;70&quot;&gt;70&lt;/meter&gt;</code></pre></div>
+        <div class="result"><meter min="0" max="100" value="70">70</meter></div>
+    </div>
+    </section><section><h2>Đa phương tiện & Nhúng</h2>
+    <div class="cheat-item" id="tag-audio">
+        <div class="desc"><div class="tagname">&lt;audio&gt;</div><div class="text">Âm thanh nhúng kèm điều khiển.</div></div>
+        <div class="code"><pre><code>&lt;audio controls&gt;
+  &lt;source src=&quot;&quot; type=&quot;audio/mpeg&quot;&gt;
+  Trình duyệt không hỗ trợ audio.
+&lt;/audio&gt;</code></pre></div>
+        <div class="result"><audio controls>
+  <source src="" type="audio/mpeg">
+  Trình duyệt không hỗ trợ audio.
+</audio></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-video">
+        <div class="desc"><div class="tagname">&lt;video&gt;</div><div class="text">Video nhúng kèm điều khiển.</div></div>
+        <div class="code"><pre><code>&lt;video width=&quot;240&quot; controls&gt;
+  &lt;source src=&quot;&quot; type=&quot;video/mp4&quot;&gt;
+  Trình duyệt không hỗ trợ video.
+&lt;/video&gt;</code></pre></div>
+        <div class="result"><video width="240" controls>
+  <source src="" type="video/mp4">
+  Trình duyệt không hỗ trợ video.
+</video></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-source">
+        <div class="desc"><div class="tagname">&lt;source&gt;</div><div class="text">Nguồn đa phương tiện cho audio/video.</div></div>
+        <div class="code"><pre><code>&lt;audio controls&gt;
+  &lt;source src=&quot;sample.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</code></pre></div>
+        <div class="result"><audio controls>
+  <source src="sample.mp3" type="audio/mpeg">
+</audio></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-iframe">
+        <div class="desc"><div class="tagname">&lt;iframe&gt;</div><div class="text">Nhúng trang/ứng dụng khác vào trang.</div></div>
+        <div class="code"><pre><code>&lt;iframe src=&quot;https://example.com&quot; width=&quot;300&quot; height=&quot;120&quot; title=&quot;Ví dụ iframe&quot;&gt;&lt;/iframe&gt;</code></pre></div>
+        <div class="result"><iframe src="https://example.com" width="300" height="120" title="Ví dụ iframe"></iframe></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-details">
+        <div class="desc"><div class="tagname">&lt;details&gt;</div><div class="text">Khối mở rộng/thu gọn.</div></div>
+        <div class="code"><pre><code>&lt;details&gt;
+  &lt;summary&gt;Xem thêm&lt;/summary&gt;
+  &lt;p&gt;Nội dung ẩn/hiện.&lt;/p&gt;
+&lt;/details&gt;</code></pre></div>
+        <div class="result"><details>
+  <summary>Xem thêm</summary>
+  <p>Nội dung ẩn/hiện.</p>
+</details></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-summary">
+        <div class="desc"><div class="tagname">&lt;summary&gt;</div><div class="text">Tiêu đề bấm để mở/đóng trong details.</div></div>
+        <div class="code"><pre><code>&lt;details&gt;&lt;summary&gt;Xem thêm&lt;/summary&gt;&lt;p&gt;...&lt;/p&gt;&lt;/details&gt;</code></pre></div>
+        <div class="result"><details><summary>Xem thêm</summary><p>...</p></details></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-nav">
+        <div class="desc"><div class="tagname">&lt;nav&gt;</div><div class="text">Khu vực điều hướng (menu).</div></div>
+        <div class="code"><pre><code>&lt;nav&gt;
+  &lt;a href=&quot;#&quot;&gt;Trang chủ&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Bài viết&lt;/a&gt;
+&lt;/nav&gt;</code></pre></div>
+        <div class="result"><nav>
+  <a href="#">Trang chủ</a> | <a href="#">Bài viết</a>
+</nav></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-header">
+        <div class="desc"><div class="tagname">&lt;header&gt;</div><div class="text">Phần đầu trang/khu vực.</div></div>
+        <div class="code"><pre><code>&lt;header&gt;&lt;h1&gt;Tiêu đề trang&lt;/h1&gt;&lt;/header&gt;</code></pre></div>
+        <div class="result"><header><h1>Tiêu đề trang</h1></header></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-main">
+        <div class="desc"><div class="tagname">&lt;main&gt;</div><div class="text">Nội dung chính (mỗi trang chỉ một).</div></div>
+        <div class="code"><pre><code>&lt;main&gt;&lt;h2&gt;Nội dung chính&lt;/h2&gt;&lt;/main&gt;</code></pre></div>
+        <div class="result"><main><h2>Nội dung chính</h2></main></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-section">
+        <div class="desc"><div class="tagname">&lt;section&gt;</div><div class="text">Khu vực nội dung có chủ đề.</div></div>
+        <div class="code"><pre><code>&lt;section&gt;&lt;h3&gt;Chủ đề A&lt;/h3&gt;&lt;p&gt;Văn bản...&lt;/p&gt;&lt;/section&gt;</code></pre></div>
+        <div class="result"><section><h3>Chủ đề A</h3><p>Văn bản...</p></section></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-article">
+        <div class="desc"><div class="tagname">&lt;article&gt;</div><div class="text">Bài viết tự chứa độc lập.</div></div>
+        <div class="code"><pre><code>&lt;article&gt;&lt;h3&gt;Bài viết&lt;/h3&gt;&lt;p&gt;Nội dung...&lt;/p&gt;&lt;/article&gt;</code></pre></div>
+        <div class="result"><article><h3>Bài viết</h3><p>Nội dung...</p></article></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-aside">
+        <div class="desc"><div class="tagname">&lt;aside&gt;</div><div class="text">Nội dung phụ (sidebar, ghi chú).</div></div>
+        <div class="code"><pre><code>&lt;aside&gt;Ghi chú bên lề&lt;/aside&gt;</code></pre></div>
+        <div class="result"><aside>Ghi chú bên lề</aside></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-footer">
+        <div class="desc"><div class="tagname">&lt;footer&gt;</div><div class="text">Phần cuối trang/khu vực.</div></div>
+        <div class="code"><pre><code>&lt;footer&gt;© 2025&lt;/footer&gt;</code></pre></div>
+        <div class="result"><footer>© 2025</footer></div>
+    </div>
+    </section><section><h2>Khác (từ ghi chú của bạn)</h2>
+    <div class="cheat-item" id="tag-area">
+        <div class="desc"><div class="tagname">&lt;area&gt;</div><div class="text">Thẻ &#x27;area&#x27; (void element) xuất hiện trong ghi chú. Ví dụ minh họa cơ bản.</div></div>
+        <div class="code"><pre><code>&lt;area&gt;</code></pre></div>
+        <div class="result"><area></div>
+    </div>
+    
+    <div class="cheat-item" id="tag-map">
+        <div class="desc"><div class="tagname">&lt;map&gt;</div><div class="text">Thẻ &#x27;map&#x27; xuất hiện trong ghi chú. Ví dụ minh họa cơ bản.</div></div>
+        <div class="code"><pre><code>&lt;map&gt;Ví dụ thẻ &amp;lt;map&amp;gt;&lt;/map&gt;</code></pre></div>
+        <div class="result"><map>Ví dụ thẻ &lt;map&gt;</map></div>
+    </div>
+    </section>
+  
+    <section id="box-model">
+      <h2>Bố cục & Box Model (margin, padding, border)</h2>
+      <div class="cheat-item">
+        <div class="desc"><div class="tagname">Box Model</div><div class="text">
+        <strong>Padding</strong>: khoảng trống bên trong viền.<br>
+        <strong>Border</strong>: đường viền bao quanh phần tử.<br>
+        <strong>Margin</strong>: khoảng cách bên ngoài viền tới phần tử khác.
+        </div></div>
+        <div class="code"><pre><code>div.demo { 
+  margin: 16px;           /* ngoài */ 
+  border: 4px solid #4b9; /* viền  */ 
+  padding: 12px;          /* trong */ 
+}</code></pre></div>
+        <div class="result">
+          <div class="demo">Khối minh họa margin/padding/border.</div>
+        </div>
+      </div>
+    </section>
+    
+  
+    <section id="anchors">
+      <h2>Liên kết nội bộ (href + id)</h2>
+      <div class="cheat-item">
+        <div class="desc"><div class="tagname">&lt;a href="#id"&gt;</div>
+          <div class="text">Bấm để cuộn tới phần có <code>id</code> tương ứng trong cùng trang.</div>
+        </div>
+        <div class="code"><pre><code>&lt;a href="#lienhe"&gt;Tới phần Liên hệ&lt;/a&gt;
+...
+&lt;h3 id="lienhe"&gt;Liên hệ&lt;/h3&gt;</code></pre></div>
+        <div class="result">
+          <a href="#lienhe">Tới phần Liên hệ</a>
+          <div style="height: 20px;"></div>
+          <h3 id="lienhe">Liên hệ</h3>
+          <p>Đây là nơi nội dung liên hệ xuất hiện.</p>
+        </div>
+      </div>
+      <div class="cheat-item">
+        <div class="desc"><div class="tagname">target</div>
+          <div class="text">Điều khiển nơi mở liên kết: <code>_self</code>, <code>_blank</code>, <code>_parent</code>, <code>_top</code>.</div>
+        </div>
+        <div class="code"><pre><code>&lt;a href="https://example.com" target="_blank"&gt;Mở tab mới&lt;/a&gt;</code></pre></div>
+        <div class="result">
+          <a href="https://example.com" target="_blank">Mở tab mới</a>
+        </div>
+      </div>
+    </section>
+    
+  
+    <section id="notes">
+      <h2>Phụ lục: Ghi chú của bạn (giữ nguyên nội dung)</h2>
+      <pre class="notes">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;style&gt;
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is a Heading 3&lt;/h3&gt;
+&lt;h4&gt;This is a Heading 4&lt;/h4&gt;
+&lt;h5&gt;This is a Heading 5&lt;/h5&gt;
+&lt;h6&gt;This is a Heading 6&lt;/h6&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is a &lt;br&gt; paragraph.&lt;/p&gt;
+
+&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;
+&lt;br&gt;
+&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;
+&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;p&gt;
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+&lt;/p&gt;
+
+&lt;p&gt;
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+&lt;/p&gt;
+
+&lt;p&gt;Đây là đoạn đầu tiên.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Đây là đoạn sau đường kẻ.&lt;/p&gt;
+
+&lt;pre&gt;
+Dòng 1      cách nhiều khoảng
+Dòng 2
+    Dòng 3 thụt vào
+&lt;/pre&gt;
+
+&lt;p style=&quot;color:blue; font-size:20px; background-color:yellow;&quot;&gt;
+    Đây là đoạn văn màu xanh, chữ to, nền vàng.
+&lt;/p&gt;
+&lt;h1 style=&quot;background-color:powderblue;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;background-color:tomato;&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;p style=&quot;color:red; font-size:20px;&quot;&gt;Xin chào!&lt;/p&gt;
+&lt;h1 style=&quot;color:blue;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;h1 style=&quot;font-family:verdana;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;font-family:courier;&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;h1 style=&quot;font-size:300%;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;font-size:160%;&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;h1 style=&quot;text-align:center;&quot;&gt;Centered Heading&lt;/h1&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;Centered paragraph.&lt;/p&gt;
+
+&lt;p&gt;Đây là &lt;b&gt;chữ in đậm&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;Hãy &lt;strong&gt;cẩn thận&lt;/strong&gt; khi sử dụng!&lt;/p&gt;
+&lt;p&gt;Từ &lt;i&gt;AI&lt;/i&gt; viết tắt của Artificial Intelligence.&lt;/p&gt;
+&lt;p&gt;Tôi &lt;em&gt;thực sự&lt;/em&gt; thích lập trình.&lt;/p&gt;
+&lt;p&gt;Hôm nay là &lt;mark&gt;thứ Sáu&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Bản quyền © 2025&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Giá cũ: &lt;del&gt;500.000đ&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Giá mới: &lt;ins&gt;450.000đ&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O là nước.&lt;/p&gt;
+&lt;p&gt;2&lt;sup&gt;3&lt;/sup&gt; = 8&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;blockquote cite=&quot;https://vi.wikipedia.org/wiki/HTML&quot;&gt;
+  HTML là ngôn ngữ đánh dấu tiêu chuẩn được sử dụng để tạo trang web.
+&lt;/blockquote&gt;
+&lt;p&gt;Albert Einstein nói: &lt;q&gt;Trí tưởng tượng quan trọng hơn kiến thức.&lt;/q&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; là ngôn ngữ tạo trang web.&lt;/p&gt;
+&lt;address&gt;
+  Viết bởi &lt;a href=&quot;mailto:admin@example.com&quot;&gt;Nguyễn Văn A&lt;/a&gt;&lt;br&gt;
+  Thành phố Hà Nội, Việt Nam
+&lt;/address&gt;
+&lt;p&gt;&lt;cite&gt;The Great Gatsby&lt;/cite&gt; được viết bởi F. Scott Fitzgerald.&lt;/p&gt;
+&lt;p&gt;Văn bản bình thường&lt;/p&gt;
+&lt;p&gt;&lt;bdo dir=&quot;rtl&quot;&gt;Văn bản đảo ngược&lt;/bdo&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- Write your comments here --&gt;
+&lt;h1 style=&quot;background-color:DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;h1 style=&quot;color:Tomato;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;h1 style=&quot;border:2px solid Violet;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:rgb(255, 99, 71);&quot;&gt;...&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:#ff6347;&quot;&gt;...&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:hsl(9, 100%, 64%);&quot;&gt;...&lt;/h1&gt;
+
+&lt;h1 style=&quot;background-color:rgba(255, 99, 71, 0.5);&quot;&gt;...&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:hsla(9, 100%, 64%, 0.5);&quot;&gt;...&lt;/h1&gt;
+&lt;hr&gt;
+
+&lt;div style=&quot;border: 2px solid blue; padding: 20px;&quot;&gt;
+  Nội dung này cách viền xanh 20px ở mọi phía
+&lt;/div&gt;
+&lt;div style=&quot;border: 2px solid red; margin: 30px;&quot;&gt;
+  Khối này cách các phần tử khác 30px ở mọi phía
+&lt;/div&gt;
+
+&lt;a href=&quot;page.html&quot; target=&quot;_self&quot;&gt;Link&lt;/a&gt;
+&lt;a href=&quot;page.html&quot; target=&quot;_blank&quot;&gt;Link&lt;/a&gt;
+&lt;a href=&quot;page.html&quot; target=&quot;_parent&quot;&gt;Link&lt;/a&gt;
+&lt;a href=&quot;page.html&quot; target=&quot;_top&quot;&gt;Link&lt;/a&gt;
+
+&lt;h2&gt;Absolute URLs&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.w3.org/&quot;&gt;W3C&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Relative URLs&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;html_images.asp&quot;&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/css/default.asp&quot;&gt;CSS Tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&quot;default.asp&quot;&gt;
+&lt;img src=&quot;smiley.gif&quot; alt=&quot;HTML tutorial&quot; style=&quot;width:42px;height:42px;&quot;&gt;
+&lt;/a&gt;
+
+&lt;a href=&quot;mailto:someone@example.com&quot;&gt;Send email&lt;/a&gt;
+&lt;button onclick=&quot;document.location=&#x27;default.asp&#x27;&quot;&gt;HTML Tutorial&lt;/button&gt;
+&lt;a href=&quot;https://www.w3schools.com/html/&quot; title=&quot;Go to W3Schools HTML section&quot;&gt;Visit our HTML Tutorial&lt;/a&gt;
+&lt;a href=&quot;https://www.w3schools.com/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+&lt;hr&gt;
+
+&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;
+&lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+&lt;img src=&quot;pic_trulli.jpg&quot; alt=&quot;Italian Trulli&quot;&gt;
+&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;
+&lt;img src=&quot;https://www.w3schools.com/images/w3schools_green.jpg&quot; alt=&quot;W3Schools.com&quot;&gt;
+&lt;img src=&quot;programming.gif&quot; alt=&quot;Computer Man&quot; style=&quot;width:48px;height:48px;&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; style=&quot;float:right;width:42px;height:42px;&quot;&gt;
+The image will float to the right of the text.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; style=&quot;float:left;width:42px;height:42px;&quot;&gt;
+The image will float to the left of the text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+All HTML elements can have attributes
+The href attribute of &lt;a&gt; specifies the URL of the page the link goes to
+The src attribute of &lt;img&gt; specifies the path to the image to be displayed
+The width and height attributes of &lt;img&gt; provide size information for images
+The alt attribute of &lt;img&gt; provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the &lt;html&gt; tag declares the language of the Web page
+The title attribute defines some extra information about an element
+
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+Use the HTML style attribute for inline styling
+Use the HTML &lt;style&gt; element to define internal CSS
+Use the HTML &lt;link&gt; element to refer to an external CSS file
+Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+Use the &lt;a&gt; element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the &lt;img&gt; element (inside &lt;a&gt;) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user&#x27;s email program
+
+Use the id attribute (id=&quot;value&quot;) to define bookmarks in a page
+Use the href attribute (href=&quot;#value&quot;) to link to the bookmark
+
+Use the HTML &lt;img&gt; element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right
+
+Use the HTML &lt;map&gt; element to define an image map
+Use the HTML &lt;area&gt; element to define the clickable areas in the image map
+Use the HTML usemap attribute of the &lt;img&gt; element to point to an image map
+Use the HTML &lt;link&gt; element to insert a favicon
+
+Use the HTML &lt;ul&gt; element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML &lt;li&gt; element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+Use the CSS property float:left to display a list horizontally
+
+Use the HTML &lt;ol&gt; element to define an ordered list
+Use the HTML type attribute to define the numbering type
+Use the HTML &lt;li&gt; element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+
+Use the HTML &lt;dl&gt; element to define a description list
+Use the HTML &lt;dt&gt; element to define the description term
+Use the HTML &lt;dd&gt; element to describe the term in a description list
+
+A block-level element always starts on a new line and takes up the full width available
+An inline element does not start on a new line and it only takes up as much width as necessary
+The &lt;div&gt; element is a block-level element and is often used as a container for other HTML elements
+The &lt;span&gt; element is an inline container used to mark up a part of a text, or a part of a document
+
+The HTML class attribute specifies one or more class names for an element
+Classes are used by CSS and JavaScript to select and access specific elements
+The class attribute can be used on any HTML element
+The class name is case sensitive
+Different HTML elements can point to the same class name
+JavaScript can access elements with a specific class name with the getElementsByClassName() method
+
+The id attribute is used to specify a unique id for an HTML element
+The value of the id attribute must be unique within the HTML document
+The id attribute is used by CSS and JavaScript to style/select a specific element
+The value of the id attribute is case sensitive
+The id attribute is also used to create HTML bookmarks
+JavaScript can access an element with a specific id with the getElementById() method
+
+The HTML &lt;iframe&gt; tag specifies an inline frame
+The src attribute defines the URL of the page to embed
+Always include a title attribute (for screen readers)
+The height and width attributes specify the size of the iframe
+Use border:none; to remove the border around the iframe
+
+The &lt;head&gt; element is a container for metadata (data about data)
+The &lt;head&gt; element is placed between the &lt;html&gt; tag and the &lt;body&gt; tag
+The &lt;title&gt; element is required and it defines the title of the document
+The &lt;style&gt; element is used to define style information for a single document
+The &lt;link&gt; tag is most often used to link to external style sheets
+The &lt;meta&gt; element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings
+The &lt;script&gt; element is used to define client-side JavaScripts
+The &lt;base&gt; element specifies the base URL and/or target for all relative URLs in a page
+
+The &lt;kbd&gt; element defines keyboard input
+The &lt;samp&gt; element defines sample output from a computer program
+The &lt;code&gt; element defines a piece of computer code
+The &lt;var&gt; element defines a variable in programming or in a mathematical expression
+The &lt;pre&gt; element defines preformatted text
+
+</pre>
+    </section>
+    
+
+  <footer class="page-footer">Generated for you — 90 thẻ được liệt kê.</footer>
+
+<section>
+    <h2>Phụ lục: Ghi chú gốc</h2>
+    <p>Nguyên văn ghi chú bạn gửi, để đảm bảo không bỏ sót bất kỳ tag hoặc từ khóa nào:</p>
+    <div class="notes-block"><pre><!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    </style>
+
+</head>
+
+
+<body>
+<h1>This is a Heading 1</h1>
+<h2>This is a Heading 2</h2>
+<h3>This is a Heading 3</h3>
+<h4>This is a Heading 4</h4>
+<h5>This is a Heading 5</h5>
+<h6>This is a Heading 6</h6>
+
+<p>This is a paragraph.</p>
+<p>This is a <br> paragraph.</p>
+
+<a href="https://www.w3schools.com">This is a link</a>
+<br>
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<h1 style="font-size:60px;">Heading 1</h1>
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+
+<p>Đây là đoạn đầu tiên.</p>
+<hr>
+<p>Đây là đoạn sau đường kẻ.</p>
+
+<pre>
+Dòng 1      cách nhiều khoảng
+Dòng 2
+    Dòng 3 thụt vào
+</pre>
+
+<p style="color:blue; font-size:20px; background-color:yellow;">
+    Đây là đoạn văn màu xanh, chữ to, nền vàng.
+</p>
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+<p style="color:red; font-size:20px;">Xin chào!</p>
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<p>Đây là <b>chữ in đậm</b>.</p>
+<p>Hãy <strong>cẩn thận</strong> khi sử dụng!</p>
+<p>Từ <i>AI</i> viết tắt của Artificial Intelligence.</p>
+<p>Tôi <em>thực sự</em> thích lập trình.</p>
+<p>Hôm nay là <mark>thứ Sáu</mark>.</p>
+<p><small>Bản quyền © 2025</small></p>
+<p>Giá cũ: <del>500.000đ</del></p>
+<p>Giá mới: <ins>450.000đ</ins></p>
+<p>H<sub>2</sub>O là nước.</p>
+<p>2<sup>3</sup> = 8</p>
+<hr>
+
+<blockquote cite="https://vi.wikipedia.org/wiki/HTML">
+  HTML là ngôn ngữ đánh dấu tiêu chuẩn được sử dụng để tạo trang web.
+</blockquote>
+<p>Albert Einstein nói: <q>Trí tưởng tượng quan trọng hơn kiến thức.</q></p>
+<p><abbr title="HyperText Markup Language">HTML</abbr> là ngôn ngữ tạo trang web.</p>
+<address>
+  Viết bởi <a href="mailto:admin@example.com">Nguyễn Văn A</a><br>
+  Thành phố Hà Nội, Việt Nam
+</address>
+<p><cite>The Great Gatsby</cite> được viết bởi F. Scott Fitzgerald.</p>
+<p>Văn bản bình thường</p>
+<p><bdo dir="rtl">Văn bản đảo ngược</bdo></p>
+<hr>
+<!-- Write your comments here -->
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<h1 style="color:Tomato;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+<hr>
+
+<div style="border: 2px solid blue; padding: 20px;">
+  Nội dung này cách viền xanh 20px ở mọi phía
+</div>
+<div style="border: 2px solid red; margin: 30px;">
+  Khối này cách các phần tử khác 30px ở mọi phía
+</div>
+
+<a href="page.html" target="_self">Link</a>
+<a href="page.html" target="_blank">Link</a>
+<a href="page.html" target="_parent">Link</a>
+<a href="page.html" target="_top">Link</a>
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<a href="mailto:someone@example.com">Send email</a>
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+<hr>
+
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+</body>
+</html>
+
+All HTML elements can have attributes
+The href attribute of <a> specifies the URL of the page the link goes to
+The src attribute of <img> specifies the path to the image to be displayed
+The width and height attributes of <img> provide size information for images
+The alt attribute of <img> provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the <html> tag declares the language of the Web page
+The title attribute defines some extra information about an element
+
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right
+
+Use the HTML <map> element to define an image map
+Use the HTML <area> element to define the clickable areas in the image map
+Use the HTML usemap attribute of the <img> element to point to an image map
+Use the HTML <link> element to insert a favicon
+
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+Use the CSS property float:left to display a list horizontally
+
+Use the HTML <ol> element to define an ordered list
+Use the HTML type attribute to define the numbering type
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+
+Use the HTML <dl> element to define a description list
+Use the HTML <dt> element to define the description term
+Use the HTML <dd> element to describe the term in a description list
+
+A block-level element always starts on a new line and takes up the full width available
+An inline element does not start on a new line and it only takes up as much width as necessary
+The <div> element is a block-level element and is often used as a container for other HTML elements
+The <span> element is an inline container used to mark up a part of a text, or a part of a document
+
+The HTML class attribute specifies one or more class names for an element
+Classes are used by CSS and JavaScript to select and access specific elements
+The class attribute can be used on any HTML element
+The class name is case sensitive
+Different HTML elements can point to the same class name
+JavaScript can access elements with a specific class name with the getElementsByClassName() method
+
+The id attribute is used to specify a unique id for an HTML element
+The value of the id attribute must be unique within the HTML document
+The id attribute is used by CSS and JavaScript to style/select a specific element
+The value of the id attribute is case sensitive
+The id attribute is also used to create HTML bookmarks
+JavaScript can access an element with a specific id with the getElementById() method
+
+The HTML <iframe> tag specifies an inline frame
+The src attribute defines the URL of the page to embed
+Always include a title attribute (for screen readers)
+The height and width attributes specify the size of the iframe
+Use border:none; to remove the border around the iframe
+
+The <head> element is a container for metadata (data about data)
+The <head> element is placed between the <html> tag and the <body> tag
+The <title> element is required and it defines the title of the document
+The <style> element is used to define style information for a single document
+The <link> tag is most often used to link to external style sheets
+The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings
+The <script> element is used to define client-side JavaScripts
+The <base> element specifies the base URL and/or target for all relative URLs in a page
+
+The <kbd> element defines keyboard input
+The <samp> element defines sample output from a computer program
+The <code> element defines a piece of computer code
+The <var> element defines a variable in programming or in a mathematical expression
+The <pre> element defines preformatted text
+
+</pre></div>
+</section>
+</body>
+</html>
