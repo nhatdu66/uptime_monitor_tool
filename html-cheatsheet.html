@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cheatsheet Demo</title>
+  <style>
+    /* Cách hiện đại: CSS */
+    body {
+      background-color: lightyellow;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+    a {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:active {
+      color: red;
+    }
+
+    /* Text styles */
+    .custom-font {
+      font-size: 20px;
+      color: green;
+      font-family: "Courier New", monospace;
+    }
+
+    /* Formatting styles */
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #f9f9f9;
+    }
+
+    /* List styles */
+    ul {
+      list-style-type: square; 
+    }
+    ol {
+      margin-left: 20px;
+    }
+    dl {
+      margin: 15px 0;
+    }
+    dt {
+      font-weight: bold;
+      color: darkblue;
+    }
+    dd {
+      margin-left: 20px;
+      color: darkgreen;
+    }
+
+    /* Image styling (hiện đại) */
+    .img-border {
+      border: 3px solid black;
+      border-radius: 10px;
+    }
+    .img-center {
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body bgcolor="lightyellow" text="black" link="blue" vlink="purple" alink="red">
+
+  <!-- ================= Basic Tags ================= -->
+  <h1>Xin chào!</h1>
+  <p>Đây là ví dụ minh họa cho <b>basic tags</b>.</p>
+  <p>Hãy thử click vào <a href="https://www.google.com" target="_blank">Google</a> để thấy màu link thay đổi.</p>
+
+  <hr>
+
+  <!-- ================= Text Tags ================= -->
+  <h2>📌 Text Tags Demo</h2>
+
+  <pre>
+    Đây là văn bản trong thẻ &lt;pre&gt;
+    Khoảng trắng và xuống dòng sẽ giữ nguyên.
+        Ví dụ:   Code   block
+  </pre>
+
+  <h1>Tiêu đề H1</h1>
+  <h3>Tiêu đề H3</h3>
+  <h6>Tiêu đề H6</h6>
+
+  <p><b>Đây là in đậm bằng &lt;b&gt;</b></p>
+  <p><strong>Đây là in đậm bằng &lt;strong&gt; (có ý nghĩa ngữ nghĩa hơn)</strong></p>
+
+  <p><i>Đây là in nghiêng bằng &lt;i&gt;</i></p>
+  <p><em>Đây là in nghiêng bằng &lt;em&gt; (có ý nghĩa ngữ nghĩa hơn)</em></p>
+
+  <p><tt>Đây là kiểu máy đánh chữ (&lt;tt&gt;)</tt></p>
+  <p><code>console.log("Hello World");</code> ← thẻ &lt;code&gt;</p>
+
+  <p><cite>“The Great Gatsby”</cite> ← thẻ &lt;cite&gt;</p>
+
+  <address>
+    Liên hệ: contact@example.com <br>
+    123 Phố ABC, Hà Nội
+  </address>
+
+  <!-- Cũ, không nên dùng -->
+  <p><font size="5" color="red" face="Verdana">Đây là chữ bằng thẻ &lt;font&gt; (đã lỗi thời)</font></p>
+
+  <!-- Cách hiện đại bằng CSS -->
+  <p class="custom-font">Đây là chữ được chỉnh bằng CSS</p>
+
+  <hr>
+
+  <!-- ================= Anchor Links ================= -->
+  <h2>📌 Anchor (Liên kết)</h2>
+
+  <p><a href="https://www.wikipedia.org" target="_blank">Đi đến Wikipedia</a></p>
+  <p><a href="mailto:someone@example.com">Gửi Email cho ai đó</a></p>
+
+  <!-- Anchor target -->
+  <a name="section1"></a>
+  <h3>Đây là Section 1</h3>
+  <p>Nội dung của Section 1...</p>
+
+  <p><a href="#section1">Quay lại Section 1</a></p>
+
+  <hr>
+
+  <!-- ================= Formatting ================= -->
+  <h2>📌 Formatting</h2>
+
+  <p>Đây là một đoạn văn được bao trong thẻ &lt;p&gt;.</p>
+  <p>Dòng thứ nhất<br>Dòng thứ hai (xuống dòng bằng &lt;br&gt;).</p>
+
+  <blockquote>
+    “Đây là một đoạn trích dẫn trong thẻ &lt;blockquote&gt;.”  
+    Văn bản sẽ được thụt vào hai bên.
+  </blockquote>
+
+  <div class="box">
+    Đây là nội dung trong thẻ &lt;div&gt; (block).  
+    Nó có thể chứa nhiều thẻ HTML khác bên trong.
+  </div>
+
+  <p>Ví dụ với thẻ &lt;span&gt;: Tôi muốn <span class="highlight">nhấn mạnh từ này</span> trong câu.</p>
+
+  <hr>
+
+  <!-- ================= Lists ================= -->
+  <h2>📌 Lists</h2>
+
+  <h3>Unordered List (ul)</h3>
+  <ul>
+    <li>Mục 1</li>
+    <li>Mục 2</li>
+    <li>Mục 3</li>
+  </ul>
+
+  <h3>Ordered List (ol)</h3>
+  <ol start="5">
+    <li>Mục 5</li>
+    <li>Mục 6</li>
+    <li>Mục 7</li>
+  </ol>
+
+  <h3>Definition List (dl)</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Một ngôn ngữ đánh dấu để tạo trang web</dd>
+    <dt>CSS</dt>
+    <dd>Ngôn ngữ định kiểu cho HTML</dd>
+  </dl>
+
+  <hr>
+
+  <!-- ================= Graphical Elements ================= -->
+  <h2>📌 Graphical Elements</h2>
+
+  <p>Ví dụ thẻ &lt;hr&gt; mặc định:</p>
+  <hr>
+
+  <p>Thẻ &lt;hr size="5" width="50%" noshade&gt;:</p>
+  <hr size="5" width="50%" noshade>
+
+  <h3>Hình ảnh</h3>
+  <p>Ảnh với thuộc tính height, width, alt:</p>
+  <img src="https://via.placeholder.com/150" 
+       alt="Ảnh demo placeholder"
+       width="150" height="100">
+
+  <p>Ảnh có viền bằng thuộc tính border (cách cũ):</p>
+  <img src="https://via.placeholder.com/120"
+       alt="Ảnh có border cũ"
+       border="5">
+
+  <p>Ảnh có viền và căn giữa bằng CSS (cách mới):</p>
+  <img src="https://via.placeholder.com/200"
+       alt="Ảnh viền CSS"
+       class="img-border img-center">
+<!-- Forms Example -->
+<form action="/submit" method="post">
+  <p>Text Input:</p>
+  <input type="text" name="username" size="20" placeholder="Enter your name">
+
+  <p>Textarea:</p>
+  <textarea name="message" cols="30" rows="5">Type your message...</textarea>
+
+  <p>Checkboxes:</p>
+  <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter <br>
+  <input type="checkbox" name="terms" value="agree" checked> I agree to terms
+
+  <p>Radio Buttons:</p>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female" checked> Female
+
+  <p>Select Menu (dropdown):</p>
+  <select name="country">
+    <option value="vn">Vietnam</option>
+    <option value="jp">Japan</option>
+    <option value="us">USA</option>
+  </select>
+
+  <p>Select Menu (scrolling, multiple choice):</p>
+  <select name="hobbies" multiple size="3">
+    <option value="reading">Reading</option>
+    <option value="music">Music</option>
+    <option value="travel">Travel</option>
+    <option value="coding">Coding</option>
+  </select>
+
+  <p>Buttons:</p>
+  <input type="submit" value="Submit Form">
+  <input type="reset" value="Reset Form">
+  <input type="image" src="https://via.placeholder.com/80x30" alt="Submit with image">
+</form>
+<!-- HTML5 Input Tag Attributes Example -->
+<form action="/submit" method="post">
+  <p>Email:</p>
+  <input type="email" name="user_email">
+
+  <p>Website URL:</p>
+  <input type="url" name="website">
+
+  <p>Number (1 to 10):</p>
+  <input type="number" name="quantity" min="1" max="10">
+
+  <p>Range (0 - 100):</p>
+  <input type="range" name="volume" min="0" max="100">
+
+  <p>Select Date:</p>
+  <input type="date" name="birthday">
+
+  <p>Select Month:</p>
+  <input type="month" name="birthmonth">
+
+  <p>Select Week:</p>
+  <input type="week" name="birthweek">
+
+  <p>Select Time:</p>
+  <input type="time" name="alarm">
+
+  <p>Search:</p>
+  <input type="search" name="searchbox">
+
+  <p>Pick a Color:</p>
+  <input type="color" name="favcolor" value="#ff0000">
+
+  <p><input type="submit" value="Submit"></p>
+</form>
+<!-- Tables Example -->
+<table border="1" cellspacing="5" cellpadding="10" width="80%">
+  <tr align="center">
+    <th>Name</th>
+    <th>Age</th>
+    <th>Country</th>
+  </tr>
+
+  <tr valign="middle">
+    <td align="left">Alice</td>
+    <td align="center">25</td>
+    <td align="right">USA</td>
+  </tr>
+
+  <tr valign="top">
+    <td rowspan="2">Bob</td>
+    <td>30</td>
+    <td nowrap>United Kingdom</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Merged cells</td>
+  </tr>
+</table>
+
+</body>
+</html>

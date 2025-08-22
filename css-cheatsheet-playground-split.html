@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSS Cheatsheet Playground — Demo tổng hợp</title>
+
+<link rel="stylesheet" href="css-cheatsheet-playground.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>CSS Cheatsheet Playground — Tổng hợp demo theo chủ đề</h1>
+      <nav>
+        <a href="#selectors">Selectors</a>
+        <a href="#color-font-text">Color & Font & Text</a>
+        <a href="#box">Box Model</a>
+        <a href="#background-border">Background & Border</a>
+        <a href="#list-table">List & Table</a>
+        <a href="#positioning">Positioning</a>
+        <a href="#transform-transition">Transform & Transition</a>
+        <a href="#animation">Animation</a>
+        <a href="#columns-grid">Columns & Grid</a>
+        <a href="#outline-generated">Outline & Generated</a>
+        <a href="#ui">UI</a>
+        <a href="#units">Units</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SELECTORS -->
+    <section id="selectors">
+      <div class="sec-head"><h2>Selectors (cơ bản & nâng cao)</h2><span class="chip">element .class #id [attr] :pseudo ::element</span></div>
+      <div class="content">
+        <div class="row">
+          <div class="card">
+            <h3>Cơ bản</h3>
+            <div class="demo">
+              <div class="flex">
+                <p>p selector</p>
+                <p class="demo-class">.class selector</p>
+                <p id="demo-id">#id selector</p>
+                <p data-kind="alpha">[attr="alpha"]</p>
+              </div>
+            </div>
+            <pre><code>p { color:#93c5fd; }
+.demo-class { color:#a7f3d0; }
+#demo-id { color:#fca5a5; }
+p[data-kind="alpha"] { text-decoration:underline; }</code></pre>
+          </div>
+          <div class="card">
+            <h3>Combinators</h3>
+            <div class="demo">
+              <div class="hstack">
+                <div class="box" id="c1">
+                  <strong>div p</strong>
+                  <p>descendant</p>
+                </div>
+                <div class="box" id="c2">
+                  <strong>div &gt; p</strong>
+                  <p>child</p>
+                </div>
+                <div class="box" id="c3">
+                  <strong>h1 + p</strong>
+                  <p>adjacent</p>
+                </div>
+                <div class="box" id="c4">
+                  <strong>h1 ~ p</strong>
+                  <p>general sibling</p>
+                </div>
+              </div>
+            </div>
+            <pre><code>div p { color:#fde68a; }
+div &gt; p { font-weight:bold; }
+h1 + p { font-style:italic; }
+h1 ~ p { opacity:.8; }</code></pre>
+          </div>
+          <div class="card">
+            <h3>Pseudo-class & Pseudo-element</h3>
+            <div class="demo">
+              <a href="#" class="pill pseudo">Link thử hover/visited/active</a>
+              <p class="pseudo-text">Dòng demo ::first-letter &amp; ::after</p>
+            </div>
+            <pre><code>a.pseudo:hover { outline:2px solid #22d3ee; }
+.pseudo-text::first-letter { font-size:200%; }
+.pseudo-text::after { content:" ← generated"; color:#a7f3d0; }</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- COLOR / FONT / TEXT -->
+    <section id="color-font-text">
+      <div class="sec-head"><h2>Color · Font · Text</h2><span class="chip">color rgba hsl | font-family weight size | text-align transform spacing</span></div>
+      <div class="content row">
+        <div class="card">
+          <h3>Màu sắc</h3>
+          <div class="demo-grid">
+            <div class="demo-item" style="color:rgb(255,99,132)">rgb()</div>
+            <div class="demo-item" style="color:rgba(59,130,246,.7)">rgba()</div>
+            <div class="demo-item" style="color:hsl(160,84%,39%)">hsl()</div>
+            <div class="demo-item" style="color:#f59e0b">#hex</div>
+          </div>
+          <pre><code>.rgb { color: rgb(255,99,132); }
+.rgba{ color: rgba(59,130,246,.7); }
+.hsl { color: hsl(160 84% 39%); }
+.hex { color: #f59e0b; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Font</h3>
+          <div class="demo" style="display:grid;gap:8px">
+            <p style="font-family: Georgia, serif;">Serif: Georgia</p>
+            <p style="font-family: 'Segoe UI', Roboto, Arial, sans-serif;">Sans-serif: Segoe UI</p>
+            <p style="font-style: italic;">font-style: italic</p>
+            <p style="font-variant: small-caps;">font-variant: small-caps</p>
+            <p style="font-weight: 700;">font-weight: 700</p>
+            <p style="font-size: 20px; line-height: 28px;">font-size + line-height</p>
+          </div>
+          <pre><code>p { font: italic small-caps 700 20px/28px 'Segoe UI', sans-serif; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Text</h3>
+          <div class="demo vstack">
+            <p style="text-align:center">text-align: center</p>
+            <p style="text-transform:uppercase">uppercase</p>
+            <p style="letter-spacing:.08em">letter-spacing</p>
+            <p style="word-spacing:.4em">word-spacing</p>
+            <p style="text-decoration:underline wavy">underline wavy</p>
+            <p style="text-shadow:0 2px 6px rgba(0,0,0,.6)">text-shadow</p>
+            <p style="text-indent:2em">text-indent dòng đầu</p>
+            <div class="scrollbox" style="white-space:nowrap;overflow:auto">white-space: nowrap — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+          </div>
+          <pre><code>p { text-align:center; text-transform:uppercase; letter-spacing:.08em; }
+p { word-spacing:.4em; text-decoration:underline wavy; text-shadow:0 2px 6px rgba(0,0,0,.6); }
+p { text-indent:2em; }
+.box { white-space:nowrap; overflow:auto; }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOX MODEL -->
+    <section id="box">
+      <div class="sec-head"><h2>Box Model</h2><span class="chip">margin · border · padding · content · box-sizing</span></div>
+      <div class="content split">
+        <div class="card">
+          <h3>Margin · Padding · Border</h3>
+          <div class="demo center" style="padding:20px">
+            <div style="background:#0b1020;padding:16px;border:8px solid #22d3ee;margin:12px;border-radius:12px">
+              <div style="background:#111827;padding:12px;border:2px dashed #93c5fd">Nội dung</div>
+            </div>
+          </div>
+          <pre><code>.box{ margin:12px; padding:16px; border:8px solid #22d3ee; border-radius:12px; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Box Sizing</h3>
+          <div class="demo row">
+            <div class="box" style="width:180px;padding:20px;border:6px solid #22d3ee;box-sizing:content-box">content-box</div>
+            <div class="box" style="width:180px;padding:20px;border:6px solid #22d3ee;box-sizing:border-box">border-box</div>
+          </div>
+          <pre><code>.a{ box-sizing: content-box; }  /* width = content */
+.b{ box-sizing: border-box; }   /* width gồm cả padding + border */</code></pre>
+        </div>
+        <div class="card">
+          <h3>Overflow</h3>
+          <div class="demo row">
+            <div class="box" style="height:80px;overflow:auto">overflow:auto<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet.</div>
+            <div class="box" style="height:80px;overflow:hidden">overflow:hidden<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet.</div>
+            <div class="box" style="height:80px;overflow:scroll">overflow:scroll<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet.</div>
+            <div class="box" style="height:80px;overflow:clip">overflow:clip (mới)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKGROUND & BORDER -->
+    <section id="background-border">
+      <div class="sec-head"><h2>Background & Border</h2><span class="chip">background shorthand · repeat · attachment · size · clip · origin · border · radius · shadow</span></div>
+      <div class="content row">
+        <div class="card">
+          <h3>Background (shorthand)</h3>
+          <div class="demo" style="background:
+              radial-gradient(120px 80px at 20% 20%, rgba(34,211,238,.25), transparent 60%),
+              linear-gradient(90deg, rgba(34,197,94,.25), transparent),
+              url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22120%22&gt;&lt;rect width=%22240%22 height=%22120%22 fill=%22%230b1020%22/&gt;&lt;circle cx=%22120%22 cy=%2260%22 r=%2240%22 fill=%22%2322d3ee%22 opacity=%220.2%22/&gt;&lt;/svg&gt;')
+              center/contain no-repeat #0b1020;">
+            background: &lt;color&gt; &lt;image&gt; &lt;repeat&gt; &lt;attachment&gt; &lt;position&gt; / &lt;size&gt;
+          </div>
+          <pre><code>.bg { background: #0b1020 url(pattern.svg) center/contain no-repeat fixed; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Background clip · origin</h3>
+          <div class="demo row">
+            <div class="box" style="padding:16px;border:8px solid #22d3ee;background:#1e293b;background-clip:border-box">background-clip: border-box</div>
+            <div class="box" style="padding:16px;border:8px solid #22d3ee;background:#1e293b;background-clip:padding-box">background-clip: padding-box</div>
+            <div class="box" style="padding:16px;border:8px solid #22d3ee;background:#1e293b;background-clip:content-box">background-clip: content-box</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Border, Radius, Shadow</h3>
+          <div class="demo row">
+            <div class="box" style="border:3px dashed #93c5fd;border-radius:12px;">dashed + radius</div>
+            <div class="box" style="border:6px double #22d3ee;border-radius:24px 8px 24px 8px;">double + mixed radius</div>
+            <div class="box" style="box-shadow:0 10px 24px rgba(0,0,0,.5),0 0 0 3px rgba(34,211,238,.5) inset;">box-shadow</div>
+          </div>
+          <pre><code>.b1{ border:3px dashed #93c5fd; border-radius:12px; }
+.b2{ border:6px double #22d3ee; border-radius:24px 8px 24px 8px; }
+.b3{ box-shadow:0 10px 24px rgba(0,0,0,.5), 0 0 0 3px rgba(34,211,238,.5) inset; }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIST & TABLE -->
+    <section id="list-table">
+      <div class="sec-head"><h2>List & Table</h2><span class="chip">list-style-type · image · position | border-collapse · spacing · layout</span></div>
+      <div class="content row">
+        <div class="card">
+          <h3>List styles</h3>
+          <div class="demo split">
+            <ul style="list-style-type:square"><li>Mục A</li><li>Mục B</li></ul>
+            <ol style="list-style-type:upper-roman"><li>I</li><li>II</li></ol>
+            <ul style="list-style-position:inside"><li>Dòng dài sẽ xuống ngay sau marker để thấy hiệu ứng inside rất rõ ràng nhé.</li></ul>
+            <ul style="list-style-image:url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22&gt;&lt;circle cx=%226%22 cy=%226%22 r=%225%22 fill=%22%2322d3ee%22/&gt;&lt;/svg&gt;')">
+              <li>Marker bằng ảnh SVG</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Table</h3>
+          <div class="demo">
+            <table class="table" style="table-layout:fixed;border-collapse:separate;border-spacing:4px">
+              <thead><tr><th>Thuộc tính</th><th>Giá trị</th><th>Ghi chú</th></tr></thead>
+              <tbody>
+                <tr><td>border-collapse</td><td>separate</td><td>tách ô</td></tr>
+                <tr><td>border-spacing</td><td>4px</td><td>khoảng cách ô</td></tr>
+                <tr><td>caption-side</td><td>top/bottom</td><td>vị trí tiêu đề</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSITIONING -->
+    <section id="positioning">
+      <div class="sec-head"><h2>Positioning</h2><span class="chip">static · relative · absolute · fixed · z-index · float/clear</span></div>
+      <div class="content split">
+        <div class="card">
+          <h3>Positions</h3>
+          <div class="demo" style="position:relative;height:160px">
+            <div class="box" style="position:static">static</div>
+            <div class="box" style="position:relative;top:8px;left:8px">relative</div>
+            <div class="box" style="position:absolute;top:10px;right:10px">absolute</div>
+            <div class="box" style="position:fixed;bottom:14px;right:14px">fixed</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Float & Clear</h3>
+          <div class="demo" style="overflow:auto">
+            <img alt="" style="float:left;width:80px;height:80px;border-radius:8px;background:#22d3ee;margin:6px 10px 6px 0" />
+            <p>Text sẽ bọc quanh ảnh nhờ <span class="kbd">float:left</span>. Dùng <span class="kbd">clear: both</span> để ngắt dòng sau các phần tử float.</p>
+            <div style="clear:both"></div>
+            <p class="note">Đây là đoạn sau khi clear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSFORM & TRANSITION -->
+    <section id="transform-transition">
+      <div class="sec-head"><h2>Transforms & Transitions</h2><span class="chip">translate · scale · rotate · skew | duration · timing · delay · property</span></div>
+      <div class="content split">
+        <div class="card">
+          <h3>Transforms (2D/3D)</h3>
+          <div class="demo hstack">
+            <div class="demo-item" style="transform:translateX(6px)">translateX(6px)</div>
+            <div class="demo-item" style="transform:scale(1.1)">scale(1.1)</div>
+            <div class="demo-item" style="transform:rotate(8deg)">rotate(8deg)</div>
+            <div class="demo-item" style="transform:skewX(8deg)">skewX(8deg)</div>
+          </div>
+          <pre><code>.el { transform: translateX(6px) scale(1.1) rotate(8deg) skewX(8deg); }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Transitions</h3>
+          <div class="demo hstack">
+            <button class="pill" style="transition:all .3s ease">Hover tôi</button>
+            <div class="demo-item" style="transition:transform .4s cubic-bezier(.2,.8,.2,1)"
+                 onmouseenter="this.style.transform='translateY(-6px)';"
+                 onmouseleave="this.style.transform='none';">hover ↑</div>
+          </div>
+          <pre><code>.btn { transition: all .3s ease; }
+.card { transition: transform .4s cubic-bezier(.2,.8,.2,1); }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANIMATION -->
+    <section id="animation">
+      <div class="sec-head"><h2>Animation</h2><span class="chip">@keyframes · duration · timing · delay · iteration · direction · play-state</span></div>
+      <div class="content row">
+        <div class="card">
+          <h3>Pulse</h3>
+          <div class="demo center">
+            <div class="pill" style="animation:pulse 2s ease-in-out infinite">pulse</div>
+          </div>
+          <pre><code>@keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.03)} }
+.badge { animation: pulse 2s ease-in-out infinite; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Spin</h3>
+          <div class="demo center">
+            <div class="demo-item spin">spin</div>
+          </div>
+          <pre><code>@keyframes spin { to{ transform: rotate(360deg) } }
+.icon { animation: spin 4s linear infinite; }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLUMNS & GRID -->
+    <section id="columns-grid">
+      <div class="sec-head"><h2>Columns & Grid</h2><span class="chip">column-count · gap · rule · span | CSS Grid dòng/cột</span></div>
+      <div class="content split">
+        <div class="card">
+          <h3>Columns</h3>
+          <div class="demo" style="column-count:3; column-gap:16px; column-rule:1px solid #334155">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet.
+            Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque.
+            Nunc dignissim risus id metus. Cras ornare tristique elit.
+          </div>
+          <pre><code>.text { column-count:3; column-gap:16px; column-rule:1px solid #334155; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Grid</h3>
+          <div class="demo" style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+            <div class="demo-item" style="grid-column:span 2">span 2</div>
+            <div class="demo-item">1</div>
+            <div class="demo-item">2</div>
+            <div class="demo-item">3</div>
+            <div class="demo-item" style="grid-column:4;grid-row:1 / span 2">abs place</div>
+          </div>
+          <pre><code>.grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.itemA{ grid-column: span 2; }
+.itemB{ grid-column:4; grid-row:1 / span 2; }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTLINE & GENERATED CONTENT -->
+    <section id="outline-generated">
+      <div class="sec-head"><h2>Outline & Generated Content</h2><span class="chip">outline-color · style · width | ::before ::after content counter</span></div>
+      <div class="content split">
+        <div class="card">
+          <h3>Outline</h3>
+          <div class="demo hstack">
+            <button class="pill" style="outline:3px dashed #22d3ee; outline-offset:4px">outline</button>
+            <button class="pill" style="outline:2px solid #f59e0b; outline-offset:2px">offset</button>
+          </div>
+          <pre><code>.btn{ outline:3px dashed #22d3ee; outline-offset:4px; }</code></pre>
+        </div>
+        <div class="card">
+          <h3>Generated content</h3>
+          <div class="demo">
+            <ul class="gen">
+              <li>Hạng mục A</li>
+              <li>Hạng mục B</li>
+              <li>Hạng mục C</li>
+            </ul>
+          </div>
+          <pre><code>.gen{ counter-reset: idx; }
+.gen li{ counter-increment: idx; position:relative; padding-left:2.2em; }
+.gen li::before{ content: counter(idx) ". "; position:absolute; left:.4em; color:#22d3ee; }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI MISC -->
+    <section id="ui">
+      <div class="sec-head"><h2>UI miscellany</h2><span class="chip">cursor · resize · user-select · visibility · opacity</span></div>
+      <div class="content row">
+        <div class="card">
+          <h3>Cursor</h3>
+          <div class="demo hstack">
+            <span class="pill" style="cursor:pointer">pointer</span>
+            <span class="pill" style="cursor:move">move</span>
+            <span class="pill" style="cursor:help">help</span>
+            <span class="pill" style="cursor:crosshair">crosshair</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Resize & Opacity</h3>
+          <div class="demo vstack">
+            <textarea style="width:100%;min-height:64px;resize:vertical;background:#0b1020;border:1px solid #334155;border-radius:8px;color:#e5e7eb;padding:8px">Kéo để resize theo chiều dọc</textarea>
+            <div class="demo-item" style="opacity:.6">opacity: .6</div>
+            <div class="demo-item" style="visibility:hidden">visibility: hidden (ẩn nhưng giữ chỗ)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNITS -->
+    <section id="units">
+      <div class="sec-head"><h2>Units & Angles & Time</h2><span class="chip">px · em · rem · % · vw · vh · ch | deg · rad · turn | s · ms</span></div>
+      <div class="content split">
+        <div class="card">
+          <h3>Units</h3>
+          <div class="demo vstack">
+            <div style="font-size:16px">Cỡ gốc 16px</div>
+            <div style="font-size:1rem">1rem = 16px</div>
+            <div style="font-size:1.5rem">1.5rem = 24px</div>
+            <div style="font-size:1em">1em theo phần tử hiện tại</div>
+            <div style="width:50%;border:1px dashed #334155">width: 50%</div>
+            <div style="width:30vw;border:1px dashed #334155">width: 30vw</div>
+            <div style="width:20ch;border:1px dashed #334155">width: 20ch</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Angles & Time</h3>
+          <div class="demo hstack">
+            <div class="demo-item" style="transform:rotate(30deg)">30deg</div>
+            <div class="demo-item" style="transform:rotate(.5turn)">.5turn</div>
+            <div class="demo-item" style="transform:rotate(0.52rad)">~0.52rad</div>
+            <div class="demo-item" style="animation:pulse 1500ms infinite">1500ms</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="center" style="padding:24px;color:#94a3b8">
+      File demo này tổng hợp nhiều thuộc tính trong CSS để bạn thực hành nhanh.
+    </footer>
+
+  </main>
+</body>
+</html>
